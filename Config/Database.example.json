@@ -1,0 +1,34 @@
+{
+  "local": {
+    "username": "database_user_name",
+    "password": "database_password",
+    "database": "database_name",
+    "host": "localhost",
+    "dialect": "mysql",
+    "migrationStorageTableName": "node_migrations"
+  },
+  "development": {
+    "username": "database_user_name",
+    "password": "database_password",
+    "database": "database_name",
+    "host": "localhost",
+    "dialect": "mysql",
+    "migrationStorageTableName": "node_migrations"
+  },
+  "uat": {
+    "username": "database_user_name",
+    "password": "database_password",
+    "database": "database_name",
+    "host": "localhost",
+    "dialect": "mysql",
+    "migrationStorageTableName": "node_migrations"
+  },
+  "production": {
+    "username": "database_user_name",
+    "password": "database_password",
+    "database": "database_name",
+    "host": "localhost",
+    "dialect": "mysql",
+    "migrationStorageTableName": "node_migrations"
+  }
+}
