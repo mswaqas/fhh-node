@@ -34,6 +34,7 @@ app.listen(port, () => {
  */
 
 require("./Routes/IndexRoute")(app, authMiddleware, validators)
+require("./Routes/ItemConsolidationRoute")(app, authMiddleware, validators)
 
 // Error Handler Middleware
 app.use(errorMiddleware)
