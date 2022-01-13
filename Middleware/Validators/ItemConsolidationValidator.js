@@ -7,7 +7,7 @@ const WrapperValidator = require("./WrapperValidator");
 
 exports.getConsolidationBoxSize = [
     body().isArray()
-    .withMessage('Body Should be in array object'),
+    .withMessage('Body should be in array'),
 
     body('*.width').exists().notEmpty()
     .withMessage('width is required')
