@@ -3,11 +3,11 @@ require("dotenv").config()
 const express = require("express")
 require("express-async-errors")
 const cors = require("cors")
-
 const errorMiddleware = require("./Middleware/ErrorMiddleware")
 const authMiddleware = require("./Middleware/Auth/AuthMiddleware")
 const validators = require("./Middleware/Validators/Index")
-
+const swaggerJSDoc = require("swagger-jsdoc")
+const swaggerUI = require('swagger-ui-express')
 const app = express()
 const port = process.env.PORT
 
@@ -18,6 +18,14 @@ app.use(
         extended: true
     })
 )
+/**
+ * Swagger Config
+ */
+const swaggerConfig = require('./Config/swagger.json')
+//console.log(swaggerConfig)
+const swaggerDocument = swaggerJSDoc(swaggerConfig)
+
+app.use('/api/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 
 app.use("/Public", express.static(__dirname + "/Public"))
 

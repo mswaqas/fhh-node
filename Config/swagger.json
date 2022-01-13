@@ -1,0 +1,17 @@
+{
+    "swaggerDefinition": {
+        "openapi": "3.0.0",
+        "info": {
+            "title": "Consolidation API's",
+            "version": "1.0.0",
+            "description": "Item Consolidation api's for suggestion of box size",
+            "contact": {
+                "name": "Muhammad Waqas Ilyas Shaikh",
+                "url": "https://www.swaqas.com/",
+                "email": "waqasshaikh436@gmail.com"
+            },
+            "servers": [" http://localhost:7000"]
+        }
+    },
+    "apis": ["./Routes/*.js"]
+}

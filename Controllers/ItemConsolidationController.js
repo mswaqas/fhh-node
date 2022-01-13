@@ -7,10 +7,9 @@ class ItemConsolidationController extends Controller {
 }
 
 /**
- *
- * @param req
- * @param res
- * @returns {Promise<void>}
+ * 
+ * @param {*} req 
+ * @param {*} res 
  */
 ItemConsolidationController.getConsolidationBoxSize = async (req, res) => {
     res.send(

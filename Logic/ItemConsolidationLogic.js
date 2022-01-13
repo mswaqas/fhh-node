@@ -1,5 +1,10 @@
 class ItemConsolidationLogic {}
 
+/**
+ * 
+ * @param {*} data 
+ * @returns 
+ */
 ItemConsolidationLogic.getBoxSize = async (data) => {
     console.log(data); // just for the checking purpose.
     let boxes = [{

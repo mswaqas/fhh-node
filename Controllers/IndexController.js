@@ -21,6 +21,11 @@ IndexController.index = async (req, res) => {
     )
 }
 
+/**
+ * 
+ * @param {*} req 
+ * @param {*} res 
+ */
 IndexController.indexPost = async (req, res) => {
     res.send(
         methods.successResponse(
