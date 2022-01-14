@@ -1,9 +1,9 @@
 # fhh-node
 
-Step for Project execution
+Step for the Project execution
 
 Please follow the following steps for run the project
-  - create envoirment file (.env) from .env.example.
+  - create environment file (.env) from .env.example.
   - run the command npm install.
   - run the command nodemon index.js.
 after all these steps project will start.
